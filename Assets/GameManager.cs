@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
 
     [SerializeField] private TextMeshProUGUI _score;
+    [SerializeField] private GameObject _ball;
 
     private static int gameScore = 0;
     //private static int completeLevels = 0;
@@ -16,7 +17,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        _score.text = GameScore.ToString();
+        _ball.transform.position = new Vector3(2, 1.5f, 0);
+
+        UpdateText();
     }
 
      /* 
