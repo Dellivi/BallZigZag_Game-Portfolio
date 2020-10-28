@@ -8,15 +8,15 @@ public class DestroyBlock : MonoBehaviour
     private float startTime = 0.1f;
     private readonly float endTime = 2f;
 
-    private void FixedUpdate()
+    private void Update()
     {
 
         if (isExit)
         {
-            startTime += 2f * Time.fixedDeltaTime;
+            startTime += Random.Range(0, 4f) * Time.deltaTime;
             if(startTime >= endTime)
             {
-                transform.Translate(new Vector3(0, -3f, 0) * Time.fixedDeltaTime);
+                transform.Translate(new Vector3(0, -3f, 0) * Time.deltaTime);
                 Destroy(this.gameObject, 3f);
             }
             

@@ -5,13 +5,15 @@ using System.Collections;
 public class PickUp : MonoBehaviour
 {
 
-    private readonly int point = 1;
-
-
     private void OnTriggerEnter(UnityEngine.Collider other)
     {
-        GameManager.GameScore += point;
+        AddScore(1);
         Destroy(this.gameObject);
+    }
+
+    public void AddScore(int score)
+    {
+        GameManager.GameScore += score;
     }
 
 }

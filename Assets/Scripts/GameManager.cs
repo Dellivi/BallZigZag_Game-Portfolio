@@ -8,11 +8,16 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _score;
     [SerializeField] private GameObject _ball;
+    [SerializeField] private GameObject _startWindow;
+    [SerializeField] private BallController _bc;
 
     private static int gameScore = 0;
+    private bool isGameStart = false;
     //private static int completeLevels = 0;
 
     public static int GameScore { get => gameScore; set => gameScore = value; }
+    public bool IsGameStart { get => isGameStart; set => isGameStart = value; }
+
     //public static int CompleteLevels { get => completeLevels; set => completeLevels = value; }
 
     void Start()
@@ -27,6 +32,14 @@ public class GameManager : MonoBehaviour
      */
     private void Update()
     {
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            _startWindow.SetActive(false);
+            isGameStart = true;
+            _bc.ChangeDir = !_bc.ChangeDir;
+        }
+
        UpdateText();
     }
 
