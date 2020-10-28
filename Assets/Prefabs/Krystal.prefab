@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8434952071461626472}
   - component: {fileID: 1370593644098711155}
   - component: {fileID: -3655928234758682529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Krystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,4 +107,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5128c790804daee43b6252350ed2e2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gm: {fileID: 2206274113717046388, guid: d9030ff7500dcef4cbf229a952ff4419, type: 3}
