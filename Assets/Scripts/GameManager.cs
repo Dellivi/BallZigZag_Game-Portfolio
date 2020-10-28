@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour
      */
     private void Update()
     {
-
         if (Input.GetMouseButtonDown(0))
         {
             _startWindow.SetActive(false);
