@@ -226,17 +226,12 @@ PrefabInstance:
       objectReference: {fileID: 1586156457}
     - target: {fileID: 287808022, guid: 28f00d80ec6e820478d2521b0dbd8463, type: 3}
       propertyPath: speed
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 540936044444278646, guid: 28f00d80ec6e820478d2521b0dbd8463,
         type: 3}
       propertyPath: m_Name
       value: Sphere
-      objectReference: {fileID: 0}
-    - target: {fileID: 540936044444278646, guid: 28f00d80ec6e820478d2521b0dbd8463,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6203824874413066362, guid: 28f00d80ec6e820478d2521b0dbd8463,
         type: 3}
@@ -827,6 +822,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 982652966}
+    - target: {fileID: 1638679317, guid: f525911709309704fae6bd4dfacad2ef, type: 3}
+      propertyPath: distanceY
+      value: 9.86
+      objectReference: {fileID: 0}
     - target: {fileID: 2432325369540898771, guid: f525911709309704fae6bd4dfacad2ef,
         type: 3}
       propertyPath: m_Name
@@ -840,12 +839,12 @@ PrefabInstance:
     - target: {fileID: 2432325369540898774, guid: f525911709309704fae6bd4dfacad2ef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.152
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2432325369540898774, guid: f525911709309704fae6bd4dfacad2ef,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2432325369540898774, guid: f525911709309704fae6bd4dfacad2ef,
         type: 3}

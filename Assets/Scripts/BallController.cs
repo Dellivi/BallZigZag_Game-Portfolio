@@ -28,11 +28,11 @@ public class BallController : MonoBehaviour
         //Смена директории шара
         if (ChangeDir && gm.IsGameStart)
         {
-            transform.Translate(new Vector3(0, 0, -1f) * Time.deltaTime * speed);
+            transform.Translate(Vector3.back * Time.deltaTime * speed, Space.World);
         }
         else if (!ChangeDir && gm.IsGameStart)
         {
-            transform.Translate(new Vector3(1f, 0, 0) * Time.deltaTime * speed);
+            transform.Translate(Vector3.right * Time.deltaTime * speed, Space.World);
         }
     }
 
