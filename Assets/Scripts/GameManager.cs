@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
      */
     private void Update()
     {
+        // Изменение направления движения шара и начало игры.
         if (Input.GetMouseButtonDown(0))
         {
             _startWindow.SetActive(false);

@@ -457,8 +457,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -825,6 +825,26 @@ PrefabInstance:
     - target: {fileID: 1638679317, guid: f525911709309704fae6bd4dfacad2ef, type: 3}
       propertyPath: distanceY
       value: 9.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432325369540898769, guid: f525911709309704fae6bd4dfacad2ef,
+        type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432325369540898769, guid: f525911709309704fae6bd4dfacad2ef,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.8820755
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432325369540898769, guid: f525911709309704fae6bd4dfacad2ef,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432325369540898769, guid: f525911709309704fae6bd4dfacad2ef,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.9945641
       objectReference: {fileID: 0}
     - target: {fileID: 2432325369540898771, guid: f525911709309704fae6bd4dfacad2ef,
         type: 3}

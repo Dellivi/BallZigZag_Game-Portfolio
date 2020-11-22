@@ -37,7 +37,7 @@ namespace Scene {
         
         
             //Сколько блоков нужно создать. Возрастает по мере прохождения уровней.
-            int count = completeLevels + 50;
+            int count = completeLevels + 100;
 
             // Генерация основных блоков
             for (int i = 0; i < count; i++)
