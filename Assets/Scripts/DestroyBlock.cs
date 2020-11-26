@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Lean.Pool;
 
 public class DestroyBlock : MonoBehaviour
 {
@@ -16,8 +17,8 @@ public class DestroyBlock : MonoBehaviour
             startTime += Random.Range(0, 4f) * Time.deltaTime;
             if(startTime >= endTime)
             {
-                transform.Translate(new Vector3(0, -3f, 0) * Time.deltaTime);
-                Destroy(this.gameObject, 3f);
+                gameObject.transform.Translate(new Vector3(0, -3f, 0) * Time.deltaTime);
+                LeanPool.Despawn(this.gameObject, 3f);
             }
             
         }

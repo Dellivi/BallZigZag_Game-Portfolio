@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     {
         _ball.transform.position = new Vector3(2, 1.5f, 0);
 
-        UpdateText();
+        PickUp.OnUpdateText += UpdateText;
     }
 
      /* 
@@ -39,8 +39,6 @@ public class GameManager : MonoBehaviour
             isGameStart = true;
             _bc.ChangeDir = !_bc.ChangeDir;
         }
-
-       UpdateText();
     }
 
     public void UpdateText()

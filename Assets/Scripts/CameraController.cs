@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private Transform player;
+    private Camera cam;
 
     [SerializeField] private float distanceY = 10f;
     [SerializeField] private float distanceX = -4f;
@@ -14,13 +15,14 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
+        cam = Camera.main;
         offsetY = new Vector3(distanceX, distanceY, distanceZ);
     }
 
     void LateUpdate()
     {
-        transform.position = player.position + offsetY;
+        cam.transform.position = player.position + offsetY;
 
-        transform.LookAt(player.position);
+        cam.transform.LookAt(player.position);
     }
 }

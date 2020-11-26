@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Lean.Pool;
 
 namespace Scene {
     public class Control : MonoBehaviour
@@ -27,12 +28,12 @@ namespace Scene {
             Vector3 position = new Vector3(2, 0, -3);
 
             //Создание стартового блока 3х3
-            GameObject newBlock = Instantiate(startBlock);
+            GameObject newBlock = LeanPool.Spawn(startBlock);
             newBlock.transform.position = new Vector3(0, 0.5f, 0);
             newBlock.transform.localScale = new Vector3(5, 1, 5);
 
             //Создание стартового блока
-            newBlock = Instantiate(mainBlock);
+            newBlock = LeanPool.Spawn(mainBlock);
             newBlock.transform.position = position;
         
         
@@ -49,7 +50,7 @@ namespace Scene {
                 if (rand == 0) { position.x += size.x; }
                 else { position.z += size.z * left; }
 
-                newBlock = Instantiate(mainBlock);
+                newBlock = LeanPool.Spawn(mainBlock);
 
                 newBlock.transform.position = position;
                 newBlock.transform.localScale = size;
@@ -59,7 +60,7 @@ namespace Scene {
 
                 if (chance <= 0.2f)
                 {
-                    Instantiate(krystal, new Vector3(newBlock.transform.position.x, 1f, newBlock.transform.position.z), Quaternion.identity);
+                    LeanPool.Spawn(krystal, new Vector3(newBlock.transform.position.x, 1f, newBlock.transform.position.z), Quaternion.identity);
                 }
 
                 yield return new WaitForEndOfFrame();
